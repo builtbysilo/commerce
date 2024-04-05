@@ -3,9 +3,9 @@ import { XMarkIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 
-function Poster({ x, y, poster }) {
+export default function Poster({ x, y, poster }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -129,7 +129,3 @@ function Poster({ x, y, poster }) {
     </>
   );
 }
-
-export default React.memo(Poster, (prevProps, nextProps) => {
-  return prevProps.x === nextProps.x && prevProps.y === nextProps.y;
-});
