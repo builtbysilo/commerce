@@ -44,7 +44,6 @@ export default async function Navbar() {
             </div>
           </Suspense>
         </div>
-        <div className="hidden justify-center md:flex md:w-1/3">{/* <Search /> */}</div>
       </div>
     </nav>
   );
