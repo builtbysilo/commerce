@@ -68,7 +68,7 @@ function Poster({ x, y, poster }) {
                         <div className="flex w-2/3 flex-col justify-between">
                           <div className="flex flex-row items-center justify-between">
                             <div className="w-1/2">
-                              <p className="text-xl text-gray-900">12.1234 N</p>
+                              <p className="text-xl text-gray-900">12.1234 NT</p>
                             </div>
                             <div className="w-1/2">
                               <p className="text-xl text-gray-900">43.4321 W</p>
