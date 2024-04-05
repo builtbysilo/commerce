@@ -1,35 +1,17 @@
 'use client';
 import Poster from 'components/Poster';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import useMeasure from 'react-use-measure';
+import { useState } from 'react';
 import indicators2 from 'utils/indicators2';
 
 export default function Final() {
   //? Framer Motion
-  const galleryPositionControls = useAnimation();
+  // const galleryPositionControls = useAnimation();
   const [positionX, setPositionX] = useState<number>(3);
   const [positionY, setPositionY] = useState<number>(55);
 
-  const [indicatorX, setIndicatorX] = useState<number>(0);
-  const [indicatorY, setIndicatorY] = useState<number>(0);
-  const [posterWidth, setPosterWidth] = useState<number>(0);
-  const [posterHeight, setPosterHeight] = useState<number>(0);
-
-  const [ref, { width }] = useMeasure();
-
-  useEffect(() => {
-    setIndicatorX(width / 200);
-    setIndicatorY(width / 100);
-  }, [width]);
-
-  interface IndicatorType {
-    id: number;
-    x: number;
-    y: number;
-    poster: object;
-  }
+  // const [ref, { width }] = useMeasure();
 
   return (
     <div className="flex h-screen w-screen items-center justify-center overflow-hidden">
@@ -51,7 +33,7 @@ export default function Final() {
       >
         <Poster x={positionX} y={positionY} poster={[]} />
 
-        {indicators2.map((poster: IndicatorType, index: number) => (
+        {indicators2.map((poster, index) => (
           <div key={index} className="z-200">
             <Poster x={poster.x} y={poster.y} poster={poster} />
           </div>
