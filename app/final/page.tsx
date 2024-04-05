@@ -1,10 +1,10 @@
 'use client';
+import Poster from 'components/Poster';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import useMeasure from 'react-use-measure';
-import Poster from '/components/Poster';
-import indicators2 from '/utils/indicators2';
+import indicators2 from 'utils/indicators2';
 
 export default function Final() {
   //? Framer Motion
