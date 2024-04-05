@@ -1,8 +1,8 @@
 'use client';
+import Poster from 'components/poster';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
-import Poster from '../components/Poster';
 // import useMeasure from 'react-use-measure';
 import indicators2 from 'utils/indicators2';
 
