@@ -1,8 +1,8 @@
 'use client';
-import Indicator from 'components/Indicator';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
+import Indicator from '/components/Indicator';
 
 export default function Home() {
   //? Framer Motion
