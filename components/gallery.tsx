@@ -72,7 +72,7 @@ export default function Gallery({ scale }: { scale: number }) {
       </motion.div>
 
       <div className="absolute bottom-10 right-[50%] z-40">
-        <div className="mt-2">
+        {/* <div className="mt-2">
           <input
             type="number"
             name="positionX"
@@ -110,7 +110,7 @@ export default function Gallery({ scale }: { scale: number }) {
               }
             }}
           />
-        </div>
+        </div> */}
       </div>
 
       {/* <div id="Top Left"  className="z-200">
