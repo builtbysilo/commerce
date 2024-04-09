@@ -1,7 +1,7 @@
 import Navbar from 'components/layout/navbar';
 import { GeistSans } from 'geist/font';
 import { ensureStartsWith } from 'lib/utils';
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 import './globals.css';
 import { Providers } from './providers';
 
@@ -37,8 +37,10 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
     <html lang="en" className={GeistSans.variable}>
       <body className="bg-neutral-50 text-black selection:bg-teal-300">
         <Providers>
-          <Navbar />
-          <main>{children}</main>
+          <Suspense fallback={null}>
+            <Navbar />
+            <main>{children}</main>
+          </Suspense>
         </Providers>
       </body>
     </html>

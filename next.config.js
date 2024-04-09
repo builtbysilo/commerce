@@ -1,11 +1,9 @@
-/** @type {import('next').NextConfig} */
 module.exports = {
   eslint: {
-    // Disabling on production builds because we're running checks on PRs via GitHub Actions.
     ignoreDuringBuilds: true
   },
   images: {
-    formats: ['image/avif', 'image/webp', 'image/jpg', 'image/png', 'image/svg+xml'],
+    formats: ['image/avif', 'image/webp'], // Only include supported formats here
     remotePatterns: [
       {
         protocol: 'https',
@@ -14,7 +12,6 @@ module.exports = {
       }
     ]
   },
-
   async redirects() {
     return [
       {
