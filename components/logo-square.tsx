@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import Image from 'next/image';
+import LokalIcon from '/public/LokalIcon.svg';
 
 export default function LogoSquare({ size }: { size?: 'sm' | undefined }) {
   return (
@@ -18,7 +19,7 @@ export default function LogoSquare({ size }: { size?: 'sm' | undefined }) {
           'h-[10px] w-[10px]': size === 'sm'
         })}
       /> */}
-      <Image width={16} height={16} src="/LokalIcon.svg" alt="Lokal Poster Co" />
+      <Image width={16} height={16} src={LokalIcon} alt="Lokal Poster Co" />
     </div>
   );
 }

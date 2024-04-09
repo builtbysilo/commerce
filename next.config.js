@@ -11,14 +11,14 @@ module.exports = {
         pathname: '/s/files/**'
       }
     ]
+  },
+  async redirects() {
+    return [
+      {
+        source: '/password',
+        destination: '/',
+        permanent: true
+      }
+    ];
   }
-  // async redirects() {
-  //   return [
-  //     {
-  //       source: '/password',
-  //       destination: '/',
-  //       permanent: true
-  //     }
-  //   ];
-  // }
 };

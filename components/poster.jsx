@@ -4,6 +4,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment, useState } from 'react';
+import Edge from '../public/214-Edge.jpg';
+import Scatter from '../public/214-Scatter.jpg';
+import Wall from '../public/214-Wall.jpg';
+import Wave from '../public/214-Wave.jpg';
 
 export default function Poster({ x, y, poster }) {
   const [open, setOpen] = useState(false);
@@ -92,30 +96,15 @@ export default function Poster({ x, y, poster }) {
                         </div>
                       </div>
                       <div className="flex flex-col">
+                        <Image src={Edge} alt={`${poster.city} - Color`} width={1000} height={0} />
                         <Image
-                          src="/214-Edge.jpg"
+                          src={Scatter}
                           alt={`${poster.city} - Color`}
                           width={1000}
                           height={0}
                         />
-                        <Image
-                          src="/214-Scatter.jpg"
-                          alt={`${poster.city} - Color`}
-                          width={1000}
-                          height={0}
-                        />
-                        <Image
-                          src="/214-Wall.jpg"
-                          alt={`${poster.city} - Color`}
-                          width={1000}
-                          height={0}
-                        />
-                        <Image
-                          src="/214-Wave.jpg"
-                          alt={`${poster.city} - Color`}
-                          width={1000}
-                          height={0}
-                        />
+                        <Image src={Wall} alt={`${poster.city} - Color`} width={1000} height={0} />
+                        <Image src={Wave} alt={`${poster.city} - Color`} width={1000} height={0} />
                       </div>
                       <Link href={`/product/${poster.handle}`}>
                         <div className="absolute bottom-0 flex h-24 w-full flex-col items-center justify-center rounded-lg bg-black">
