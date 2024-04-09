@@ -9,13 +9,17 @@ export default function Poster({ x, y, poster }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1 + 0.05 * poster.id }}
+    >
       <motion.div
         className="absolute cursor-pointer"
         style={{ top: `${y}%`, left: `${x}%`, width: `0.8%`, height: `4%` }}
         whileHover={{
           y: -2,
-          transition: { duration: 0.2, ease: 'easeOut' }
+          transition: { duration: 0.2, ease: 'easeOut', delay: 0 } // Specific transition for whileHover
         }}
         onClick={() => setOpen(true)}
       >
@@ -126,6 +130,6 @@ export default function Poster({ x, y, poster }) {
           </div>
         </Dialog>
       </Transition.Root>
-    </>
+    </motion.div>
   );
 }
