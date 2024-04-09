@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import useMeasure from 'react-use-measure';
 import indicators2 from 'utils/indicators2';
+import LokalGallery from '/public/LokalGallery-FINAL-Test.svg';
 
 export default function Gallery({ scale }: { scale: number }) {
   //? Framer Motion
@@ -64,7 +65,7 @@ export default function Gallery({ scale }: { scale: number }) {
 
         <Image
           className="pointer-events-none"
-          src="/LokalGallery-FINAL-Test.svg"
+          src={LokalGallery}
           width={5000}
           height={0}
           alt="Lokal Poster Gallery"
