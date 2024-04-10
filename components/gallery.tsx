@@ -7,7 +7,23 @@ import useMeasure from 'react-use-measure';
 import indicators2 from 'utils/indicators2';
 import LokalGallery from '/public/LokalGallery-FINAL-Test.svg';
 
-export default function Gallery({ scale }: { scale: number }) {
+export default function Gallery({
+  scale,
+  topCon,
+  bottomCon,
+  leftCon,
+  rightCon,
+  startX,
+  startY
+}: {
+  scale: number;
+  topCon: number;
+  bottomCon: number;
+  leftCon: number;
+  rightCon: number;
+  startX: string;
+  startY: string;
+}) {
   //? Framer Motion
   //   const [positionX, setPositionX] = useState<number>(3);
   //   const [positionY, setPositionY] = useState<number>(55);
@@ -18,15 +34,15 @@ export default function Gallery({ scale }: { scale: number }) {
 
   useEffect(() => {
     const calculatedConstraints = {
-      top: -width * 0.1,
-      right: width * 0.4,
-      bottom: width * 0.11,
-      left: -width * 0.4
+      top: -width * topCon,
+      right: width * rightCon,
+      bottom: width * bottomCon,
+      left: -width * leftCon
     };
 
     setConstraints(calculatedConstraints);
     console.log(calculatedConstraints);
-  }, [width]);
+  }, [width, topCon, bottomCon, leftCon, rightCon]);
 
   return (
     <div className="flex h-screen w-screen cursor-none items-center justify-center overflow-hidden">
@@ -34,8 +50,8 @@ export default function Gallery({ scale }: { scale: number }) {
         ref={ref}
         initial={{ x: 0, y: 0, scale: 1 }}
         animate={{
-          x: '200%',
-          y: '-60%',
+          x: startX,
+          y: startY,
           scale: scale
         }}
         transition={{ duration: 1.5, delay: 0.5, ease: 'easeOut', type: 'tween' }}
@@ -45,10 +61,10 @@ export default function Gallery({ scale }: { scale: number }) {
         dragConstraints={constraints}
         onAnimationComplete={() => {
           const calculatedConstraints = {
-            top: -width * 0.1 * 5,
-            right: width * 0.4 * 5,
-            bottom: width * 0.1 * 5,
-            left: -width * 0.4 * 5
+            top: -width * topCon * scale,
+            right: width * rightCon * scale,
+            bottom: width * bottomCon * scale,
+            left: -width * leftCon * scale
           };
 
           setConstraints(calculatedConstraints);
