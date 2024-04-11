@@ -3,7 +3,7 @@ import Gallery from 'components/gallery';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-[#333333]">
       <div className="hidden md:inline">
         <CustomCursor />
       </div>

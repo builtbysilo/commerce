@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import useMeasure from 'react-use-measure';
 import indicators2 from 'utils/indicators2';
-import LokalGallery from '/public/LokalGallery-FINAL-Test.svg';
+import LokalGallery from '/public/LokalGallery-FINAL.svg';
 
 export default function Gallery({
   scale,
@@ -47,6 +47,7 @@ export default function Gallery({
   return (
     <div className="flex h-screen w-screen cursor-none items-center justify-center overflow-hidden">
       <motion.div
+        className="bg-[#333333]"
         ref={ref}
         initial={{ x: 0, y: 0, scale: 1 }}
         animate={{
@@ -68,7 +69,6 @@ export default function Gallery({
           };
 
           setConstraints(calculatedConstraints);
-          console.log(calculatedConstraints);
         }}
       >
         {/* <Poster x={positionX} y={positionY} poster={[]} /> */}

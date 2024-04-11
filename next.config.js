@@ -12,6 +12,7 @@ module.exports = {
       }
     ]
   },
+  transpilePackages: ['three'],
   async redirects() {
     return [
       {

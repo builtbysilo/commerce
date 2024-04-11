@@ -4,10 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment, useState } from 'react';
-import Edge from '../public/214-Edge.jpg';
-import Scatter from '../public/214-Scatter.jpg';
-import Wall from '../public/214-Wall.jpg';
-import Wave from '../public/214-Wave.jpg';
+import ThreeDPoster from './three-d-poster';
 
 export default function Poster({ x, y, poster }) {
   const [open, setOpen] = useState(false);
@@ -53,8 +50,8 @@ export default function Poster({ x, y, poster }) {
                   leaveTo="translate-x-full"
                 >
                   <Dialog.Panel className="pointer-events-auto w-screen max-w-4xl">
-                    <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
-                      <div className="px-4 sm:px-6">
+                    <div className="flex h-screen flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                      <div className="h-[5vh] px-4 sm:px-6">
                         <div className="flex items-start justify-between">
                           <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
                             {poster.city} - {poster.handle}
@@ -72,7 +69,7 @@ export default function Poster({ x, y, poster }) {
                           </div>
                         </div>
                       </div>
-                      <div className="mt-6 flex w-full p-4 sm:p-6">
+                      <div className="mt-6 flex h-[20vh] w-full p-4 sm:p-6">
                         <div className="flex w-2/3 flex-col justify-between">
                           <div className="flex flex-row items-center justify-between">
                             <div className="w-1/2">
@@ -82,7 +79,9 @@ export default function Poster({ x, y, poster }) {
                               <p className="text-xl text-gray-900">43.4321 W</p>
                             </div>
                           </div>
-                          <p className="text-6xl text-gray-900">{poster.city}</p>
+                          <p className="text-3xl text-gray-900 md:text-4xl lg:text-6xl">
+                            {poster.city}
+                          </p>
                         </div>
                         <div className="flex w-1/3 flex-col gap-4">
                           <div className="flex flex-col">
@@ -95,16 +94,8 @@ export default function Poster({ x, y, poster }) {
                           </div>
                         </div>
                       </div>
-                      <div className="flex flex-col">
-                        <Image src={Edge} alt={`${poster.city} - Color`} width={1000} height={0} />
-                        <Image
-                          src={Scatter}
-                          alt={`${poster.city} - Color`}
-                          width={1000}
-                          height={0}
-                        />
-                        <Image src={Wall} alt={`${poster.city} - Color`} width={1000} height={0} />
-                        <Image src={Wave} alt={`${poster.city} - Color`} width={1000} height={0} />
+                      <div className="flex h-[75vh] flex-col">
+                        <ThreeDPoster />
                       </div>
                       <Link href={`/product/${poster.handle}`}>
                         <div className="absolute bottom-0 flex h-24 w-full flex-col items-center justify-center rounded-lg bg-black">
