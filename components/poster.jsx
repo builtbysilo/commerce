@@ -50,7 +50,7 @@ export default function Poster({ x, y, poster }) {
                   leaveTo="translate-x-full"
                 >
                   <Dialog.Panel className="pointer-events-auto w-screen max-w-4xl">
-                    <div className="flex h-screen flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                    <div className="flex h-screen flex-col overflow-y-scroll bg-white pt-6 shadow-xl">
                       <div className="h-[5vh] px-4 sm:px-6">
                         <div className="flex items-start justify-between">
                           <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
@@ -94,11 +94,11 @@ export default function Poster({ x, y, poster }) {
                           </div>
                         </div>
                       </div>
-                      <div className="flex h-[75vh] flex-col">
+                      <div className="flex h-[70vh] flex-col">
                         <ThreeDPoster />
                       </div>
                       <Link href={`/product/${poster.handle}`}>
-                        <div className="absolute bottom-0 flex h-24 w-full flex-col items-center justify-center rounded-lg bg-black">
+                        <div className="flex h-24 w-full flex-col items-center justify-center bg-black">
                           <p className="text-lg text-white">Shop Poster</p>
                         </div>
                       </Link>
