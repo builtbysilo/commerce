@@ -1,12 +1,13 @@
 'use client';
+import Indicator from 'components/indicator';
 import Poster from 'components/poster';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import useMeasure from 'react-use-measure';
+import indicators from 'utils/indicators';
 import indicators2 from 'utils/indicators2';
 import LokalGallery from '/public/LokalGallery-FINAL.svg';
-
 export default function Gallery({
   scale,
   topCon,
@@ -76,6 +77,12 @@ export default function Gallery({
         {indicators2.map((poster, index) => (
           <div key={index} className="z-200">
             <Poster x={poster.x} y={poster.y} poster={poster} />
+          </div>
+        ))}
+
+        {indicators.map((ind, index) => (
+          <div key={index} className="z-200">
+            <Indicator x={ind.x} y={ind.y} ind={ind} />
           </div>
         ))}
 
