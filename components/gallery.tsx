@@ -26,8 +26,8 @@ export default function Gallery({
   startY: string;
 }) {
   //? Framer Motion
-  //   const [positionX, setPositionX] = useState<number>(3);
-  //   const [positionY, setPositionY] = useState<number>(55);
+  const [positionX, setPositionX] = useState<number>(3);
+  const [positionY, setPositionY] = useState<number>(55);
 
   const [ref, { width }] = useMeasure();
 
@@ -72,7 +72,7 @@ export default function Gallery({
           setConstraints(calculatedConstraints);
         }}
       >
-        {/* <Poster x={positionX} y={positionY} poster={[]} /> */}
+        <Poster x={positionX} y={positionY} poster={{ areacode: '214', color: 'R' }} />
 
         {indicators2.map((poster, index) => (
           <div key={index} className="z-200">
@@ -96,7 +96,7 @@ export default function Gallery({
       </motion.div>
 
       <div className="absolute bottom-10 right-[50%] z-40">
-        {/* <div className="mt-2">
+        <div className="mt-2">
           <input
             type="number"
             name="positionX"
@@ -134,7 +134,7 @@ export default function Gallery({
               }
             }}
           />
-        </div> */}
+        </div>
       </div>
 
       {/* <div id="Top Left"  className="z-200">

@@ -17,7 +17,22 @@ export default function Poster({ x, y, poster }) {
     >
       <motion.div
         className="absolute cursor-pointer"
-        style={{ top: `${y}%`, left: `${x}%`, width: `0.8%`, height: `4%` }}
+        style={{
+          top: `${y}%`,
+          left: `${x}%`,
+          width: `${
+            (poster.areacode === '214' || poster.areacode === '404') && poster.color !== 'K'
+              ? '1.81%'
+              : '0.8%'
+          }
+        `,
+          height: `${
+            (poster.areacode === '214' || poster.areacode === '404') && poster.color !== 'K'
+              ? '2.64%'
+              : '4%'
+          }
+        `
+        }}
         whileHover={{
           y: -2,
           transition: { duration: 0.2, ease: 'easeOut', delay: 0 } // Specific transition for whileHover
@@ -26,7 +41,7 @@ export default function Poster({ x, y, poster }) {
       >
         <Image
           priority={true}
-          src="/GalleryPosters/702-O.svg"
+          src={`/GalleryPosters/${poster.areacode}-${poster.color}.svg`}
           fill={true}
           style={{ objectFit: 'contain' }}
           alt="alt"
