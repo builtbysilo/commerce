@@ -4,6 +4,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { Fragment, useState } from 'react';
+import LokalFont from '/public/LokalFont.svg';
+import LokalIcon from '/public/LokalIcon.svg';
+import LokalWordMark from '/public/LokalWordmark.svg';
+import PosterKitschy from '/public/Poster-Kitschy.jpg';
+import PosterLazy from '/public/Poster-Lazy.jpg';
+import PosterMessy from '/public/Poster-Messy.jpg';
 
 function Indicator({ x, y, ind }) {
   const [open, setOpen] = useState(false);
@@ -80,7 +86,7 @@ export default React.memo(Indicator, (prevProps, nextProps) => {
 });
 
 function WelcomeSign({ setOpen }) {
-  const [img, setImg] = useState('/LokalIcon.svg');
+  const [img, setImg] = useState(LokalIcon);
   return (
     <div
       id="Container"
@@ -118,7 +124,7 @@ function WelcomeSign({ setOpen }) {
                 </div>
                 <div className="col-span-4 flex flex-col justify-between gap-10">
                   <Image
-                    src="/LokalWordmark.svg"
+                    src={LokalWordMark}
                     width={1400}
                     height={0}
                     alt="alt"
@@ -139,24 +145,24 @@ function WelcomeSign({ setOpen }) {
                       We explored a couple directions; some{' '}
                       <span
                         className="underline"
-                        onMouseOver={() => setImg('/Poster-Messy.jpg')}
-                        onMouseLeave={() => setImg('/LokalIcon.svg')}
+                        onMouseOver={() => setImg(PosterMessy)}
+                        onMouseLeave={() => setImg(LokalIcon)}
                       >
                         messy
                       </span>
                       , some{' '}
                       <span
                         className="underline"
-                        onMouseOver={() => setImg('/Poster-Kitschy.jpg')}
-                        onMouseLeave={() => setImg('/LokalIcon.svg')}
+                        onMouseOver={() => setImg(PosterKitschy)}
+                        onMouseLeave={() => setImg(LokalIcon)}
                       >
                         kitschy
                       </span>
                       , and one that was initially just{' '}
                       <span
                         className="underline"
-                        onMouseOver={() => setImg('/Poster-Lazy.jpg')}
-                        onMouseLeave={() => setImg('/LokalIcon.svg')}
+                        onMouseOver={() => setImg(PosterLazy)}
+                        onMouseLeave={() => setImg(LokalIcon)}
                       >
                         lazy
                       </span>
@@ -226,7 +232,7 @@ function Font({ setOpen }) {
                     newsletter to receive early access to beta releases throughout 2024.
                   </p>
                 </div>
-                <Image src="/LokalFont.svg" width={2000} height={0} alt="alt" />
+                <Image src={LokalFont} width={2000} height={0} alt="alt" />
               </div>
             </div>
           </div>
@@ -273,7 +279,7 @@ function PosterLayout({ setOpen }) {
                   <h2 className="text-6xl font-bold">Poster Layout</h2>
                   <p className="max-w-lg text-lg">xxx</p>
                 </div>
-                <Image src="/LokalFont.svg" width={2000} height={0} alt="alt" />
+                <Image src={LokalFont} width={2000} height={0} alt="alt" />
               </div>
             </div>
           </div>
