@@ -110,7 +110,7 @@ export default function Poster({ x, y, poster }) {
                         </div>
                       </div>
                       <div className="flex h-[70vh] flex-col">
-                        <ThreeDPoster />
+                        <ThreeDPoster poster={poster} />
                       </div>
                       <Link href={`/product/${poster.handle}`}>
                         <div className="flex h-24 w-full flex-col items-center justify-center bg-black">

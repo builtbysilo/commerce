@@ -27,6 +27,14 @@ module.exports = {
         fadeIn: 'fadeIn .3s ease-in-out',
         carousel: 'marquee 60s linear infinite',
         blink: 'blink 1.4s both infinite'
+      },
+      columnCount: {
+        1: '1',
+        2: '2',
+        4: '4'
+      },
+      columnGap: {
+        1: '1rem' // Adjust the gap size as needed
       }
     }
   },

@@ -72,7 +72,7 @@ export default function Gallery({
           setConstraints(calculatedConstraints);
         }}
       >
-        <Poster x={positionX} y={positionY} poster={{ areacode: '214', color: 'R' }} />
+        {/* <Poster x={positionX} y={positionY} poster={{ areacode: '214', color: 'R' }} /> */}
 
         {indicators2.map((poster, index) => (
           <div key={index} className="z-200">
@@ -95,7 +95,7 @@ export default function Gallery({
         />
       </motion.div>
 
-      <div className="absolute bottom-10 right-[50%] z-40">
+      {/* <div className="absolute bottom-10 right-[50%] z-40">
         <div className="mt-2">
           <input
             type="number"
@@ -135,22 +135,6 @@ export default function Gallery({
             }}
           />
         </div>
-      </div>
-
-      {/* <div id="Top Left"  className="z-200">
-        <Indicator x={15} y={15} />
-      </div>
-
-      <div id="Top Right" className="z-200">
-        <Indicator x={85} y={15} />
-      </div>
-
-      <div id="Bottom Right" className="z-200">
-        <Indicator x={85} y={85} />
-      </div>
-
-      <div id="Bottom Left" className="z-200">
-        <Indicator x={15} y={85} />
       </div> */}
     </div>
   );
