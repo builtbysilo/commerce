@@ -5,6 +5,9 @@ module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      ringColor: {
+        colors: require('tailwindcss/colors')
+      },
       fontFamily: {
         sans: ['var(--font-geist-sans)']
       },

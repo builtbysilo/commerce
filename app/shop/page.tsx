@@ -12,15 +12,15 @@ export const metadata = {
 export default async function ShopPage({}: {
   searchParams?: { [key: string]: string | string[] | undefined };
 }) {
-  // const { sort, q: searchValue } = searchParams as { [key: string]: string };
-  // const { sortKey, reverse } = sorting.find((item) => item.slug === sort) || defaultSort;
+  const sortKey = 'TITLE'; // Sort products by title
+  const reverse = false; // Sort in ascending order
 
-  const products = await getProducts({});
+  const products = await getProducts({ sortKey, reverse });
 
   return (
     <>
       {products.length > 0 ? (
-        <Grid className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <Grid className="grid-cols-2 lg:grid-cols-4">
           <ProductGridItems products={products} />
         </Grid>
       ) : null}

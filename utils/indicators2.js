@@ -7,7 +7,7 @@ const indicators2 = [
     areacode: '702',
     color: 'O',
     drawer: true,
-    handle: 'dallas-214-blue'
+    handle: 'lasvegas-702-orange'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const indicators2 = [
     areacode: '702',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'lasvegas-702-yellow'
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const indicators2 = [
     areacode: '702',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'lasvegas-702-green'
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const indicators2 = [
     areacode: '702',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'lasvegas-702-blue'
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const indicators2 = [
     areacode: '702',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'lasvegas-702-purple'
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const indicators2 = [
     areacode: '702',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'lasvegas-702-red'
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const indicators2 = [
     areacode: '407',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'orlando-407-orange'
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const indicators2 = [
     areacode: '407',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'orlando-407-yellow'
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const indicators2 = [
     areacode: '407',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'orlando-407-green'
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const indicators2 = [
     areacode: '407',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'orlando-407-blue'
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ const indicators2 = [
     areacode: '407',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'orlando-407-purple'
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ const indicators2 = [
     areacode: '407',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'orlando-407-red'
   },
   {
     id: 13,
@@ -127,7 +127,7 @@ const indicators2 = [
     areacode: '213',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'losangeles-213-orange'
   },
   {
     id: 14,
@@ -137,7 +137,7 @@ const indicators2 = [
     areacode: '213',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'losangeles-213-yellow'
   },
   {
     id: 15,
@@ -147,7 +147,7 @@ const indicators2 = [
     areacode: '213',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'losangeles-213-green'
   },
   {
     id: 16,
@@ -157,7 +157,7 @@ const indicators2 = [
     areacode: '213',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'losangeles-213-blue'
   },
   {
     id: 17,
@@ -167,7 +167,7 @@ const indicators2 = [
     areacode: '213',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'losangeles-213-purple'
   },
   {
     id: 18,
@@ -177,7 +177,7 @@ const indicators2 = [
     areacode: '213',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'losangeles-213-red'
   },
   {
     id: 19,
@@ -187,7 +187,7 @@ const indicators2 = [
     areacode: '212',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'newyorkcity-212-orange'
   },
   {
     id: 20,
@@ -197,7 +197,7 @@ const indicators2 = [
     areacode: '212',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'newyorkcity-212-yellow'
   },
   {
     id: 21,
@@ -207,7 +207,7 @@ const indicators2 = [
     areacode: '212',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'newyorkcity-212-green'
   },
   {
     id: 22,
@@ -217,7 +217,7 @@ const indicators2 = [
     areacode: '212',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'newyorkcity-212-blue'
   },
   {
     id: 23,
@@ -227,7 +227,7 @@ const indicators2 = [
     areacode: '212',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'newyorkcity-212-purple'
   },
   {
     id: 24,
@@ -237,7 +237,7 @@ const indicators2 = [
     areacode: '212',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'newyorkcity-212-red'
   },
   {
     id: 25,
@@ -247,7 +247,7 @@ const indicators2 = [
     areacode: '415',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'sanfrancisco-415-orange'
   },
   {
     id: 26,
@@ -257,7 +257,7 @@ const indicators2 = [
     areacode: '415',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'sanfrancisco-415-yellow'
   },
   {
     id: 27,
@@ -267,7 +267,7 @@ const indicators2 = [
     areacode: '415',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'sanfrancisco-415-green'
   },
   {
     id: 28,
@@ -277,7 +277,7 @@ const indicators2 = [
     areacode: '415',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'sanfrancisco-415-blue'
   },
   {
     id: 29,
@@ -287,7 +287,7 @@ const indicators2 = [
     areacode: '415',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'sanfrancisco-415-purple'
   },
   {
     id: 30,
@@ -297,7 +297,7 @@ const indicators2 = [
     areacode: '415',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'sanfrancisco-415-red'
   },
   {
     id: 31,
@@ -307,7 +307,7 @@ const indicators2 = [
     areacode: '305',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'miami-305-orange'
   },
   {
     id: 32,
@@ -317,7 +317,7 @@ const indicators2 = [
     areacode: '305',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'miami-305-yellow'
   },
   {
     id: 33,
@@ -327,7 +327,7 @@ const indicators2 = [
     areacode: '305',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'miami-305-green'
   },
   {
     id: 34,
@@ -337,7 +337,7 @@ const indicators2 = [
     areacode: '305',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'miami-305-blue'
   },
   {
     id: 35,
@@ -347,7 +347,7 @@ const indicators2 = [
     areacode: '305',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'miami-305-purple'
   },
   {
     id: 36,
@@ -357,7 +357,7 @@ const indicators2 = [
     areacode: '305',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'miami-305-red'
   },
   {
     id: 37,
@@ -367,7 +367,7 @@ const indicators2 = [
     areacode: '312',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'chicago-312-orange'
   },
   {
     id: 38,
@@ -377,7 +377,7 @@ const indicators2 = [
     areacode: '312',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'chicago-312-yellow'
   },
   {
     id: 39,
@@ -387,7 +387,7 @@ const indicators2 = [
     areacode: '312',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'chicago-312-green'
   },
   {
     id: 40,
@@ -397,7 +397,7 @@ const indicators2 = [
     areacode: '312',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'chicago-312-blue'
   },
   {
     id: 41,
@@ -407,7 +407,7 @@ const indicators2 = [
     areacode: '312',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'chicago-312-purple'
   },
   {
     id: 42,
@@ -417,7 +417,7 @@ const indicators2 = [
     areacode: '312',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'chicago-312-red'
   },
   {
     id: 43,
@@ -427,7 +427,7 @@ const indicators2 = [
     areacode: '206',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'seattle-206-orange'
   },
   {
     id: 44,
@@ -437,7 +437,7 @@ const indicators2 = [
     areacode: '206',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'seattle-206-yellow'
   },
   {
     id: 45,
@@ -447,7 +447,7 @@ const indicators2 = [
     areacode: '206',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'seattle-206-green'
   },
   {
     id: 46,
@@ -457,7 +457,7 @@ const indicators2 = [
     areacode: '206',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'seattle-206-blue'
   },
   {
     id: 47,
@@ -467,7 +467,7 @@ const indicators2 = [
     areacode: '206',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'seattle-206-purple'
   },
   {
     id: 48,
@@ -477,7 +477,7 @@ const indicators2 = [
     areacode: '206',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'seattle-206-red'
   },
   {
     id: 49,
@@ -487,7 +487,7 @@ const indicators2 = [
     areacode: '617',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'boston-617-orange'
   },
   {
     id: 50,
@@ -497,7 +497,7 @@ const indicators2 = [
     areacode: '617',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'boston-617-yellow'
   },
   {
     id: 51,
@@ -507,7 +507,7 @@ const indicators2 = [
     areacode: '617',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'boston-617-green'
   },
   {
     id: 52,
@@ -517,7 +517,7 @@ const indicators2 = [
     areacode: '617',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'boston-617-blue'
   },
   {
     id: 53,
@@ -527,7 +527,7 @@ const indicators2 = [
     areacode: '617',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'boston-617-purple'
   },
   {
     id: 54,
@@ -537,7 +537,7 @@ const indicators2 = [
     areacode: '617',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'boston-617-red'
   },
   {
     id: 55,
@@ -547,7 +547,7 @@ const indicators2 = [
     areacode: '210',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'sanantonio-210-orange'
   },
   {
     id: 56,
@@ -557,7 +557,7 @@ const indicators2 = [
     areacode: '210',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'sanantonio-210-yellow'
   },
   {
     id: 57,
@@ -567,7 +567,7 @@ const indicators2 = [
     areacode: '210',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'sanantonio-210-green'
   },
   {
     id: 58,
@@ -577,7 +577,7 @@ const indicators2 = [
     areacode: '210',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'sanantonio-210-blue'
   },
   {
     id: 59,
@@ -587,7 +587,7 @@ const indicators2 = [
     areacode: '210',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'sanantonio-210-purple'
   },
   {
     id: 60,
@@ -597,7 +597,7 @@ const indicators2 = [
     areacode: '210',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'sanantonio-210-red'
   },
   {
     id: 61,
@@ -607,7 +607,7 @@ const indicators2 = [
     areacode: '615',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'nasville-615-orange'
   },
   {
     id: 62,
@@ -617,7 +617,7 @@ const indicators2 = [
     areacode: '615',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'nasville-615-yellow'
   },
   {
     id: 63,
@@ -627,7 +627,7 @@ const indicators2 = [
     areacode: '615',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'nasville-615-green'
   },
   {
     id: 64,
@@ -637,7 +637,7 @@ const indicators2 = [
     areacode: '615',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'nasville-615-blue'
   },
   {
     id: 65,
@@ -647,7 +647,7 @@ const indicators2 = [
     areacode: '615',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'nasville-615-purple'
   },
   {
     id: 66,
@@ -657,7 +657,7 @@ const indicators2 = [
     areacode: '615',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'nasville-615-red'
   },
   {
     id: 67,
@@ -667,7 +667,7 @@ const indicators2 = [
     areacode: '504',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'neworleans-504-orange'
   },
   {
     id: 68,
@@ -677,7 +677,7 @@ const indicators2 = [
     areacode: '504',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'neworleans-504-yellow'
   },
   {
     id: 69,
@@ -687,7 +687,7 @@ const indicators2 = [
     areacode: '504',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'neworleans-504-green'
   },
   {
     id: 70,
@@ -697,7 +697,7 @@ const indicators2 = [
     areacode: '504',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'neworleans-504-blue'
   },
   {
     id: 71,
@@ -707,7 +707,7 @@ const indicators2 = [
     areacode: '504',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'neworleans-504-purple'
   },
   {
     id: 72,
@@ -717,7 +717,7 @@ const indicators2 = [
     areacode: '504',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'neworleans-504-red'
   },
   {
     id: 73,
@@ -727,7 +727,7 @@ const indicators2 = [
     areacode: '808',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'honolulu-808-orange'
   },
   {
     id: 74,
@@ -737,7 +737,7 @@ const indicators2 = [
     areacode: '808',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'honolulu-808-yellow'
   },
   {
     id: 75,
@@ -747,7 +747,7 @@ const indicators2 = [
     areacode: '808',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'honolulu-808-green'
   },
   {
     id: 76,
@@ -757,7 +757,7 @@ const indicators2 = [
     areacode: '808',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'honolulu-808-blue'
   },
   {
     id: 77,
@@ -767,7 +767,7 @@ const indicators2 = [
     areacode: '808',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'honolulu-808-purple'
   },
   {
     id: 78,
@@ -777,7 +777,7 @@ const indicators2 = [
     areacode: '808',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'honolulu-808-red'
   },
   {
     id: 79,
@@ -787,7 +787,7 @@ const indicators2 = [
     areacode: '619',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'sandiego-619-orange'
   },
   {
     id: 80,
@@ -797,7 +797,7 @@ const indicators2 = [
     areacode: '619',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'sandiego-619-yellow'
   },
   {
     id: 81,
@@ -807,7 +807,7 @@ const indicators2 = [
     areacode: '619',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'sandiego-619-green'
   },
   {
     id: 82,
@@ -817,7 +817,7 @@ const indicators2 = [
     areacode: '619',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'sandiego-619-blue'
   },
   {
     id: 83,
@@ -827,7 +827,7 @@ const indicators2 = [
     areacode: '619',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'sandiego-619-purple'
   },
   {
     id: 84,
@@ -837,7 +837,7 @@ const indicators2 = [
     areacode: '619',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'sandiego-619-red'
   },
   {
     id: 85,
@@ -847,7 +847,7 @@ const indicators2 = [
     areacode: '404',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'atlanta-404-orange'
   },
   {
     id: 86,
@@ -857,7 +857,7 @@ const indicators2 = [
     areacode: '404',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'atlanta-404-yellow'
   },
   {
     id: 87,
@@ -867,7 +867,7 @@ const indicators2 = [
     areacode: '404',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'atlanta-404-green'
   },
   {
     id: 88,
@@ -877,7 +877,7 @@ const indicators2 = [
     areacode: '404',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'atlanta-404-blue'
   },
   {
     id: 89,
@@ -887,7 +887,7 @@ const indicators2 = [
     areacode: '404',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'atlanta-404-purple'
   },
   {
     id: 90,
@@ -897,7 +897,7 @@ const indicators2 = [
     areacode: '404',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'atlanta-404-red'
   },
   {
     id: 91,
@@ -907,7 +907,7 @@ const indicators2 = [
     areacode: '214',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'dallas-214-orange'
   },
   {
     id: 92,
@@ -917,7 +917,7 @@ const indicators2 = [
     areacode: '214',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'dallas-214-yellow'
   },
   {
     id: 93,
@@ -927,7 +927,7 @@ const indicators2 = [
     areacode: '214',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'dallas-214-green'
   },
   {
     id: 94,
@@ -937,7 +937,7 @@ const indicators2 = [
     areacode: '214',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'dallas-214-blue'
   },
   {
     id: 95,
@@ -947,7 +947,7 @@ const indicators2 = [
     areacode: '214',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'dallas-214-purple'
   },
   {
     id: 96,
@@ -957,7 +957,7 @@ const indicators2 = [
     areacode: '214',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'dallas-214-red'
   },
   {
     id: 97,
@@ -967,7 +967,7 @@ const indicators2 = [
     areacode: '202',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'washingtondc-202-orange'
   },
   {
     id: 98,
@@ -977,7 +977,7 @@ const indicators2 = [
     areacode: '202',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'washingtondc-202-yellow'
   },
   {
     id: 99,
@@ -987,7 +987,7 @@ const indicators2 = [
     areacode: '202',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'washingtondc-202-green'
   },
   {
     id: 100,
@@ -997,7 +997,7 @@ const indicators2 = [
     areacode: '202',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'washingtondc-202-blue'
   },
   {
     id: 101,
@@ -1007,7 +1007,7 @@ const indicators2 = [
     areacode: '202',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'washingtondc-202-purple'
   },
   {
     id: 102,
@@ -1017,7 +1017,7 @@ const indicators2 = [
     areacode: '202',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'washingtondc-202-red'
   },
   {
     id: 103,
@@ -1027,7 +1027,7 @@ const indicators2 = [
     areacode: '215',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'philadelphia-215-orange'
   },
   {
     id: 104,
@@ -1037,7 +1037,7 @@ const indicators2 = [
     areacode: '215',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'philadelphia-215-yellow'
   },
   {
     id: 105,
@@ -1047,7 +1047,7 @@ const indicators2 = [
     areacode: '215',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'philadelphia-215-green'
   },
   {
     id: 106,
@@ -1057,7 +1057,7 @@ const indicators2 = [
     areacode: '215',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'philadelphia-215-blue'
   },
   {
     id: 107,
@@ -1067,7 +1067,7 @@ const indicators2 = [
     areacode: '215',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'philadelphia-215-purple'
   },
   {
     id: 108,
@@ -1077,7 +1077,7 @@ const indicators2 = [
     areacode: '215',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'philadelphia-215-red'
   },
   {
     id: 109,
@@ -1087,7 +1087,7 @@ const indicators2 = [
     areacode: '303',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'denver-303-orange'
   },
   {
     id: 110,
@@ -1097,7 +1097,7 @@ const indicators2 = [
     areacode: '303',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'denver-303-yellow'
   },
   {
     id: 111,
@@ -1107,7 +1107,7 @@ const indicators2 = [
     areacode: '303',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'denver-303-green'
   },
   {
     id: 112,
@@ -1117,7 +1117,7 @@ const indicators2 = [
     areacode: '303',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'denver-303-blue'
   },
   {
     id: 113,
@@ -1127,7 +1127,7 @@ const indicators2 = [
     areacode: '303',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'denver-303-purple'
   },
   {
     id: 114,
@@ -1137,7 +1137,7 @@ const indicators2 = [
     areacode: '303',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'denver-303-red'
   },
   {
     id: 115,
@@ -1147,7 +1147,7 @@ const indicators2 = [
     areacode: '602',
     color: 'O',
     drawer: true,
-    handle: ''
+    handle: 'phoenix-602-orange'
   },
   {
     id: 116,
@@ -1157,7 +1157,7 @@ const indicators2 = [
     areacode: '602',
     color: 'Y',
     drawer: true,
-    handle: ''
+    handle: 'phoenix-602-yellow'
   },
   {
     id: 117,
@@ -1167,7 +1167,7 @@ const indicators2 = [
     areacode: '602',
     color: 'G',
     drawer: true,
-    handle: ''
+    handle: 'phoenix-602-green'
   },
   {
     id: 118,
@@ -1177,7 +1177,7 @@ const indicators2 = [
     areacode: '602',
     color: 'B',
     drawer: true,
-    handle: ''
+    handle: 'phoenix-602-blue'
   },
   {
     id: 119,
@@ -1187,7 +1187,7 @@ const indicators2 = [
     areacode: '602',
     color: 'P',
     drawer: true,
-    handle: ''
+    handle: 'phoenix-602-purple'
   },
   {
     id: 120,
@@ -1197,7 +1197,7 @@ const indicators2 = [
     areacode: '602',
     color: 'R',
     drawer: true,
-    handle: ''
+    handle: 'phoenix-602-red'
   },
   {
     id: 121,
@@ -1207,7 +1207,7 @@ const indicators2 = [
     areacode: '404',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'atlanta-404-black'
   },
   {
     id: 122,
@@ -1217,7 +1217,7 @@ const indicators2 = [
     areacode: '303',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'denver-303-black'
   },
   {
     id: 123,
@@ -1227,7 +1227,7 @@ const indicators2 = [
     areacode: '415',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'sanfrancisco-415-black'
   },
   {
     id: 124,
@@ -1237,7 +1237,7 @@ const indicators2 = [
     areacode: '615',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'nashville-615-black'
   },
   {
     id: 125,
@@ -1247,7 +1247,7 @@ const indicators2 = [
     areacode: '206',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'seatle-206-black'
   },
   {
     id: 126,
@@ -1257,7 +1257,7 @@ const indicators2 = [
     areacode: '202',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'washingtondc-202-black'
   },
   {
     id: 127,
@@ -1267,7 +1267,7 @@ const indicators2 = [
     areacode: '619',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'sandiego-619-black'
   },
   {
     id: 128,
@@ -1277,7 +1277,7 @@ const indicators2 = [
     areacode: '312',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'chicago-312-black'
   },
   {
     id: 129,
@@ -1287,7 +1287,7 @@ const indicators2 = [
     areacode: '407',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'neworleans-407-black'
   },
   {
     id: 130,
@@ -1297,7 +1297,7 @@ const indicators2 = [
     areacode: '212',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'newyorkcitycity-212-black'
   },
   {
     id: 131,
@@ -1307,7 +1307,7 @@ const indicators2 = [
     areacode: '214',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'dallas-214-black'
   },
   {
     id: 132,
@@ -1317,7 +1317,7 @@ const indicators2 = [
     areacode: '602',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'phoenix-602-black'
   },
   {
     id: 133,
@@ -1327,7 +1327,7 @@ const indicators2 = [
     areacode: '305',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'miami-305-black'
   },
   {
     id: 134,
@@ -1337,7 +1337,7 @@ const indicators2 = [
     areacode: '215',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'philadelphia-215-black'
   },
   {
     id: 135,
@@ -1347,7 +1347,7 @@ const indicators2 = [
     areacode: '210',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'sanantonio-210-black'
   },
   {
     id: 136,
@@ -1357,7 +1357,7 @@ const indicators2 = [
     areacode: '617',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'boston-617-black'
   },
   {
     id: 137,
@@ -1367,7 +1367,7 @@ const indicators2 = [
     areacode: '808',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'honolulu-808-black'
   },
   {
     id: 138,
@@ -1377,7 +1377,7 @@ const indicators2 = [
     areacode: '504',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'neworleans-504-black'
   },
   {
     id: 139,
@@ -1387,7 +1387,7 @@ const indicators2 = [
     areacode: '702',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'lasvegas-702-black'
   },
   {
     id: 140,
@@ -1397,7 +1397,7 @@ const indicators2 = [
     areacode: '213',
     color: 'K',
     drawer: true,
-    handle: ''
+    handle: 'losangeles-213-black'
   }
 ];
 

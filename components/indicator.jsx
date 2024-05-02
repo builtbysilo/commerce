@@ -66,7 +66,7 @@ function Indicator({ x, y, ind }) {
       )}
 
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={setOpen}>
+        <Dialog as="div" className="relative z-50" onClose={setOpen}>
           <div className="fixed inset-0 overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
               {ind.id === 1 && <WelcomeSign setOpen={setOpen} />}
@@ -412,15 +412,17 @@ function EverPresentBlack({ setOpen }) {
                     always keep in stock.
                   </p>
                 </div>
-                <div className="flex flex-row gap-6 overflow-x-scroll">
+                <div className="relative flex h-full flex-row gap-6 overflow-x-scroll">
                   {posters.map((poster, index) => (
-                    <Image
-                      key={index}
-                      src={`/3DPosters/${poster.areacode}-K.png`}
-                      width={2000}
-                      height={0}
-                      alt="alt"
-                    />
+                    <div className=" relative aspect-[2/3] h-full w-auto" key={index}>
+                      <Image
+                        key={index}
+                        src={`/3DPosters/${poster.areacode}-K.png`}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        alt="alt"
+                      />
+                    </div>
                   ))}
                 </div>
               </div>
