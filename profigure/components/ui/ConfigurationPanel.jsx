@@ -10,7 +10,7 @@ import {
 import Image from 'next/image';
 
 // Production page sidebar — renders settings sections as accordions
-function ConfigurationPanel({settings}) {
+function ConfigurationPanel({settings, productImages = {}}) {
   const {meta, sections} = settings;
 
   return (
@@ -26,7 +26,7 @@ function ConfigurationPanel({settings}) {
       </div>
 
       {sections.map((section, index) => (
-        <Accordion key={index} section={section} />
+        <Accordion key={index} section={section} productImages={productImages} />
       ))}
 
       <ButtonLG className="sticky bottom-0 p-4 w-full bg-brandPrimary">

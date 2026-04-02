@@ -3,6 +3,7 @@ import {
   SelectionSystem,
   SelectionAddOn,
 } from '../../uiComponents';
+import kbirdShopifyProducts from './kbird.shopify';
 
 const kbirdSettings = {
   meta: {name: 'K-Bird', model: 'kbird', version: '1.0'},
@@ -47,6 +48,18 @@ const kbirdSettings = {
       ],
       grid: 'grid-cols-3',
       selection: 'primary',
+    },
+    {
+      title: 'Shop',
+      type: 'shopify',
+      grid: 'grid-cols-2',
+      selection: 'primary',
+      options: kbirdShopifyProducts.map((p) => ({
+        title: p.title,
+        productHandle: p.handle,
+        position: p.position,
+        rotation: p.rotation,
+      })),
     },
   ],
 };

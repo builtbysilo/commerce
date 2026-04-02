@@ -134,7 +134,7 @@ export const SpaceLG = ({className = ""}) => (
 
 //? Accordion Component
 
-export const Accordion = ({section}) => {
+export const Accordion = ({section, productImages = {}}) => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(true);
   const {selectedOptions, handleOptionSelect} = useModel();
@@ -202,6 +202,7 @@ export const Accordion = ({section}) => {
                     <Selection
                       key={option.title}
                       option={option}
+                      productImage={option.productHandle ? productImages[option.productHandle] : undefined}
                       isSelected={isOptionSelected(option)}
                       onSelect={() => handleSelect(option)}
                     />
@@ -227,7 +228,7 @@ export const Accordion = ({section}) => {
   );
 };
 
-export const Selection = ({option, isSelected, onSelect, children}) => {
+export const Selection = ({option, isSelected, onSelect, productImage}) => {
   return (
     <div
       className="flex flex-col w-full gap-4 text-center cursor-pointer"
@@ -241,9 +242,26 @@ export const Selection = ({option, isSelected, onSelect, children}) => {
         {isSelected && (
           <div className="absolute z-10 w-3 h-3 rounded-full bg-brandSecondary top-2 right-2" />
         )}
-        {option.component ? option.component : null}
+        {productImage ? (
+          <SelectionShopifyProduct image={productImage} />
+        ) : option.component ? (
+          option.component
+        ) : null}
       </div>
       <HeadingXS>{option.title}</HeadingXS>
+    </div>
+  );
+};
+
+export const SelectionShopifyProduct = ({image}) => {
+  return (
+    <div className="relative w-full h-full">
+      <Image
+        alt={image.altText}
+        src={image.url}
+        fill
+        className="object-contain p-3"
+      />
     </div>
   );
 };
