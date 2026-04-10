@@ -5,6 +5,7 @@ import {
   addToCart,
   createCart,
   getCart,
+  getProduct,
   removeFromCart,
   updateCart,
 } from "lib/shopify";
@@ -103,4 +104,23 @@ export async function redirectToCheckout() {
 export async function createCartAndSetCookie() {
   let cart = await createCart();
   (await cookies()).set("cartId", cart.id!);
+}
+
+export async function addConfiguredItemsToCart(handles: string[]) {
+  if (!handles.length) return "No products selected";
+
+  try {
+    const products = await Promise.all(handles.map((h) => getProduct(h)));
+
+    const lines = products
+      .filter((p) => p?.variants[0]?.id)
+      .map((p) => ({ merchandiseId: p!.variants[0]!.id, quantity: 1 }));
+
+    if (!lines.length) return "No valid products found";
+
+    await addToCart(lines);
+    updateTag(TAGS.cart);
+  } catch (e) {
+    return "Error adding items to cart";
+  }
 }
